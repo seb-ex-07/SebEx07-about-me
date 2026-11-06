@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SebEx</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.png">
+</head>
+
+<body>
+
+    <!--LIGHT / DARK MODE SWITCH-->
+    <input type="checkbox" id="themetoggle" class="themecheck" aria-label="Switch between dark and light mode">
+
+    <!--HEADER AND NAVIGATION-->
+    <header class="header">
+
+        <a class="log" href="#home">
+            <img src="images/logo.png" alt="SebEx Logo">
+        </a>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#more">More</a>
+            <a href="#journey">Journey</a>
+            <a href="#skills">Skills</a>
+            <a href="#favorites">Favorites</a>
+            <a href="#goals">Goals</a>
+            <a href="#reflection">Reflection</a>
+        </nav>
+
+        <!--Click to switch between dark and light mode-->
+        <label class="themetoggle" for="themetoggle" title="Switch between dark and light mode">
+            <span class="toggleknob"></span>
+        </label>
+
+        <div class="scrollprogress">
+        <div class="scrollprogressbar" id="scrollprogressbar"></div>
+        </div>
+    </header>
+
+
+    <main>
+
+        <!--HOME SECTION-->
+
+        <section id="home" class="home">
+
+            <img src="images/profile.png" alt="Sebastian's Profile Picture" class="homeimage">
+
+            <div class="hometext">
+
+                <p class="eyebrow">WELCOME TO MY PERSONAL WEBSITE</p>
+
+                <h1>HELLO, I'M <span>SEBEX</span></h1>
+
+                <p class="homesubtitle">
+                    Aspiring Programmer | Aspiring Content Creator | Claiming Success
+                </p>
+
+                <div class="scrolltext">
+                    <div class="scrolltrack">
+
+                        <div class="scrollgroup">
+                            <span>"JUST DO IT." |</span>
+                            <span>"WE LEARN AS WE GO." |</span>
+                            <span>"SUCCESS MEANS FAILING STEP 1." |</span>
+                            <span>"IF YOU CAN'T TAKE THE RISK, YOU CAN'T CREATE A FUTURE." |</span>
+                            <span>"NEVER GIVING UP IS MY MAGIC." |</span>
+                        </div>
+
+                        <div class="scrollgroup" aria-hidden="true">
+                            <span>"JUST DO IT." |</span>
+                            <span>"WE LEARN AS WE GO." |</span>
+                            <span>"SUCCESS MEANS FAILING STEP 1." |</span>
+                            <span>"IF YOU CAN'T TAKE THE RISK, YOU CAN'T CREATE A FUTURE." |</span>
+                            <span>"NEVER GIVING UP IS MY MAGIC." |</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <a href="#about" class="homebutton">EXPLORE MY PAGE ↓</a>
+
+            </div>
+
+            <div class="musicplayer glass">
+
+                <div id="songtit">
+                    <h4>Way Down We Go | KALEO</h4>
+                </div>
+
+                <div id="albumcover">
+                    <img src="images/albumcover1.jpg" alt="Album Cover">
+                </div>
+
+                <div id="song1">
+                    <audio src="audio/song1.mp3" controls>
+                        Your browser does not support audio playback.
+                    </audio>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--ABOUT ME SECTION-->
+        <section id="about" class="about section">
+
+            <div class="sectionheading">
+                <p class="eyebrow">GET TO KNOW ME</p>
+                <h1 class="headers">ABOUT ME</h1>
+            </div>
+
+            <div class="aboutcontainer glass">
+
+                <div class="abouttext">
+
+                    <h2>Hello! I'm Sebastian!</h2>
+
+                    <p>
+                        My name is Sebastian Daniel A. Alipio! Welcome to my webpage!
+                        Here lies some of the things I want to share about myself,
+                        including my interests, hobbies, skills, favorites, and a
+                        little bit of my personal life.
+                    </p>
+
+                    <p>
+                        In this webpage, you will discover and learn more about me,
+                        the things I enjoy doing, and the activities that make me
+                        happy. You will also get to know some of my favorite things,
+                        my talents, and the things that make me unique as an individual.
+                    </p>
+
+                    <a href="#more" class="textlink">LEARN MORE →</a>
+
+                    <div class="contacts">
+
+                        <a href="mailto:sebastiandanielalemania.alipio26@bicol-u.edu.ph">
+                            <img src="images/gmail.jpg" alt="Gmail"
+                            title="Email me">
+                        </a>
+
+                        <a href="https://github.com/seb-ex-07"
+                        target="_blank" rel="noopener noreferrer">
+                            <img src="images/github.jpg" alt="GitHub"
+                            title="GitHub">
+                        </a>
+
+                        <a href="https://www.facebook.com/sebastian.alipio.7"
+                        target="_blank" rel="noopener noreferrer">
+                            <img src="images/facebook.jpg" alt="Facebook"
+                            title="Facebook">
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="aboutimage">
+                    <img src="images/profile.png" alt="Sebastian">
+                    <p class="imagecaption">"Just Do It."</p>
+                </div>
+
+                <div class="mottos">
+                    <span>"We Learn As We Go."</span>
+                    <span>"The Law of the Universe."</span>
+                    <span>"Never Giving Up Is My Magic."</span>
+                    <span>"To Be Successful Is to Fail Step 1."</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--MORE ABOUT ME SECTION-->
+        <section id="more" class="more section">
+
+            <div class="sectionheading">
+                <p class="eyebrow">A LITTLE MORE ABOUT MYSELF</p>
+                <h1 class="headers">MORE ABOUT ME</h1>
+            </div>
+
+            <div class="moregrid">
+
+                <div class="morebox glass">
+
+                    <h3>ME</h3>
+
+                    <ul>
+                        <li>Full Name: Sebastian Daniel A. Alipio</li>
+                        <li>Nicknames: Baste, Seb, Sebastian</li>
+                        <li>Languages: English, Tagalog, Bicol, Conyo, Genggeng, etc.</li>
+                        <li>Mottos: "Just Do It." | "We Learn As We Go."</li>
+                        <li>Best in Lutang</li>
+                    </ul>
+
+                </div>
+
+
+                <div class="morebox glass">
+
+                    <h3>INTERESTS</h3>
+
+                    <ul>
+                        <li>Programming</li>
+                        <li>Editing</li>
+                        <li>Games</li>
+                        <li>Computer Hardware</li>
+                        <li>Tech Gadgets and Gizmos</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <!--EDUCATION TABLE-->
+            <div class="educationbox glass">
+
+                <h3>EDUCATION</h3>
+
+                <div class="educationtable">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>ELEMENTARY</th>
+                                <th>HIGH SCHOOL</th>
+                                <th>COLLEGE</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+
+                                <td>
+                                    <ul>
+                                        <li>GRADE 1-3 | BTTC</li>
+                                        <ul>
+                                            <li>Grade 1 | WITH HONORS</li>
+                                            <li>Grade 2 | 1st HONOR</li>
+                                            <li>Grade 3 | 1st HONOR</li>
+                                        </ul>
+
+                                        <li>GRADE 4-6 | CNCS</li>
+                                        <ul>
+                                            <li>Grade 4 | WITH HONORS</li>
+                                            <li>Grade 5 | WITH HONORS</li>
+                                            <li>Grade 6 | WITH HONORS</li>
+                                        </ul>
+                                    </ul>
+                                </td>
+
+                                <td>
+                                    <ul>
+                                        <li>GRADE 7-10 STE | MORMS</li>
+                                        <ul>
+                                            <li>Grade 7 | WITH HONORS</li>
+                                            <li>Grade 8 | WITH HONORS</li>
+                                            <li>Grade 9 | WITH HONORS</li>
+                                            <li>Grade 10 | WITH HONORS</li>
+                                        </ul>
+
+                                        <li>GRADE 11-12 STEM | MORMS</li>
+                                        <ul>
+                                            <li>Grade 11 | WITH HONORS</li>
+                                            <li>Grade 12 | WITH HONORS</li>
+                                        </ul>
+                                    </ul>
+                                </td>
+
+                                <td>
+                                    <ul>
+                                        <li>1ST YEAR | BUCS | BSCS</li>
+                                        <ul>
+                                            <li>Bachelor of Science in Computer Science | Mapasa lang First Year</li>
+                                        </ul>
+                                    </ul>
+                                </td>
+
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+
+            <!--PHOTO COLLAGE-->
+            <div class="photosection">
+
+                <h3>PHOTOS OF ME</h3>
+
+                <div class="collage">
+                    <img src="images/1.png" alt="Photo of me">
+                    <img src="images/5.png" alt="Photo of me">
+                    <img src="images/3.png" alt="Photo of me">
+                    <img src="images/4.png" alt="Photo of me">
+                    <img src="images/2.png" alt="Photo of me">
+                    <img src="images/10.png" alt="Photo of me">
+                    <img src="images/7.png" alt="Photo of me">
+                    <img src="images/8.png" alt="Photo of me">
+                    <img src="images/9.png" alt="Photo of me">
+                    <img src="images/6.png" alt="Photo of me">
+                    <img src="images/11.png" alt="Photo of me">
+                    <img src="images/12.png" alt="Photo of me">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--PROGRAMMING JOURNEY SECTION-->
+        <section id="journey" class="journey section">
+
+            <div class="sectionheading">
+                <p class="eyebrow">WHERE IT ALL BEGAN</p>
+                <h1 class="headers">MY JOURNEY IN PROGRAMMING</h1>
+            </div>
+
+
+            <div class="journeylist">
+
+                <div class="journeycard glass">
+
+                    <div class="journeyimage">
+                        <img src="images/icon1.png" alt="Programming journey icon">
+                    </div>
+
+                    <div class="journeytext">
+                        <h3>Big Bang Boom</h3>
+
+                        <p>
+                            Here lies the beginning of it all, the start of a new
+                            beginning, and the start of a new ending. HELLO WORLD!
+                            First is the question, "BA'T ANG BAGAL NANAMAN NG
+                            LAPTOP KO?!" I started wondering how. From discovering,
+                            learning, and acknowledging each part of the reason why,
+                            how, and what, I eventually found the reason why it was
+                            slow and also found another reason why I loved learning
+                            about it so much. Yes, it started with a slow laptop,
+                            a big imagination, and a big dream to conquer the world.
+                            The spark that lit my heart in pursuing technology began
+                            with a tiny problem that I eventually found a solution to.
+                            Now, I'm still growing, and I will grow much more.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="journeycard reverse glass">
+
+                    <div class="journeyimage">
+                        <img src="images/icon2.png" alt="Motivation icon">
+                    </div>
+
+                    <div class="journeytext">
+                        <h3>Motivation</h3>
+
+                        <p>
+                            I started this journey with a single spark, but as I
+                            went on with it, that single spark exploded, expanded,
+                            and grew even more. From a little spark, I found many
+                            more things that I wanted to pursue. Those things
+                            motivated me and still motivate me now. I also found
+                            the discipline and knowledge I need to move forward.
+                            My motivation? To do it all for one person:
+                            "Just Doing It, For Her."
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="journeycard glass">
+
+                    <div class="journeyimage">
+                        <img src="images/icon3.png" alt="Journey icon">
+                    </div>
+
+                    <div class="journeytext">
+                        <h3>Journey</h3>
+
+                        <p>
+                            The journey so far has been such a pain, but the
+                            experiences and new things I have learned have been
+                            something new and exciting. The journey was fun,
+                            complex, weird, and full of questions:
+                            "Ito ba talaga ang course na para sa akin?"
+                            It kept bothering me along the way, but I used the
+                            question as a way to push myself further.
+                            "Ito nga pala talaga ang para sa akin."
+                            That saying pushed me forward. I went from zero,
+                            and now I'm farther than where I was, but still far
+                            from where I want to be. The journey ahead will be
+                            more, and I expect it to be more fun, complex, and
+                            challenging. I will take them all, one line at a time.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--SKILLS SECTION-->
+        <section id="skills" class="skills section">
+
+            <div class="sectionheading">
+                <p class="eyebrow">WHAT I'VE BEEN LEARNING</p>
+                <h1 class="headers">SKILLS</h1>
+                <p>Here are some of my skills!</p>
+            </div>
+
+            <div class="skillicons">
+
+                <a href="#codingpop" class="skillcard glass">
+                    <img src="images/codingicon.png" alt="Coding">
+                    <h3>Programming</h3>
+                    <span>Explore my coding skills →</span>
+                </a>
+
+                <a href="#capcutpop" class="skillcard glass">
+                    <img src="images/capcuticon.png" alt="CapCut">
+                    <h3>Editing</h3>
+                    <span>Explore my editing skills →</span>
+                </a>
+
+                <a href="#canvapop" class="skillcard glass">
+                    <img src="images/canvaicon.png" alt="Canva">
+                    <h3>Canva</h3>
+                    <span>Explore my design skills →</span>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!--CODING POPUP-->
+        <div class="despop" id="codingpop">
+
+            <a href="#skills" class="popbg" aria-label="Close popup"></a>
+
+            <div class="popcont glass">
+
+                <a href="#skills" class="close" aria-label="Close popup">&times;</a>
+
+                <div class="poptext">
+
+                    <p class="eyebrow">MY TECHNICAL SKILLS</p>
+                    <h2>Programming</h2>
+
+                    <p class="codingdes">
+                        Here are my current programming skills so far
+                        as I continue in my journey.
+                    </p>
+
+                    <div class="skill">
+
+                        <div class="skillinfo">
+                            <span>HTML</span>
+                            <span>45%</span>
+                        </div>
+
+                        <div class="progbar">
+                            <div class="proghtml"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="skill">
+
+                        <div class="skillinfo">
+                            <span>CSS</span>
+                            <span>30%</span>
+                        </div>
+
+                        <div class="progbar">
+                            <div class="progcss"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="skill">
+
+                        <div class="skillinfo">
+                            <span>C Programming</span>
+                            <span>85%</span>
+                        </div>
+
+                        <div class="progbar">
+                            <div class="progc"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!--EDIT POPUP-->
+        <div class="despop" id="capcutpop">
+
+            <a href="#skills" class="popbg" aria-label="Close popup"></a>
+
+            <div class="popcont glass">
+
+                <a href="#skills" class="close" aria-label="Close popup">&times;</a>
+
+                <div class="poptext">
+
+                    <p class="eyebrow">CREATIVE SKILLS</p>
+                    <h2>Video Editing</h2>
+
+                    <p>
+                        Video editing is one of the creative skills I enjoy
+                        exploring. Using CapCut, I edit clips for streamers,
+                        brands, and other YouTubers who need their long-form
+                        videos edited. I continue to develop my creativity
+                        and improve my editing skills through practice and
+                        consistent editing.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!--CANVA POPUP-->
+        <div class="despop" id="canvapop">
+
+            <a href="#skills" class="popbg" aria-label="Close popup"></a>
+
+            <div class="popcont glass">
+
+                <a href="#skills" class="close" aria-label="Close popup">&times;</a>
+
+                <div class="poptext">
+
+                    <p class="eyebrow">CREATIVE SKILLS</p>
+                    <h2>Canva Design</h2>
+
+                    <p>
+                        I enjoy creating different visual designs using Canva,
+                        from presentations, layouts, and graphic designs to
+                        posters and other digital art materials. I explore
+                        different layouts, designs, colors, and creative
+                        inspirations to create clean and visually appealing
+                        designs. I continue to improve my creativity and
+                        develop my design skills, not just to help myself
+                        but also to share my skills and help others.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!--FAVORITES SECTION-->
+        <section id="favorites" class="favorites section">
+
+            <div class="sectionheading">
+                <p class="eyebrow">THE THINGS I ENJOY</p>
+                <h1 class="headers">MY FAVORITES</h1>
+                <p>Some of the games and apps I enjoy and use for fun!</p>
+            </div>
+
+            <div class="favoritescontent">
+
+                <h2 class="subheading">GAMES</h2>
+
+                <div class="gamestable glass">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Mobile Games</th>
+                                <th>PC Games</th>
+                                <th>Console Games</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+
+                                <td>
+                                    <ul>
+                                        <li>NBA 2K19</li>
+                                        <li>COD Mobile</li>
+                                        <li>Roblox</li>
+                                    </ul>
+                                </td>
+
+                                <td>
+                                    <ul>
+                                        <li>Roblox</li>
+                                    </ul>
+                                </td>
+
+                                <td>
+                                    <ul>
+                                        <li>Horizon: Zero Dawn</li>
+                                        <li>Infamous: Second Son</li>
+                                        <li>Demon Slayer: Hinokami Chronicles</li>
+                                        <li>Battlefield 4</li>
+                                        <li>Honor</li>
+                                    </ul>
+                                </td>
+
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+                <h2 class="subheading">APPS</h2>
+
+                <div class="appscontainer">
+
+                    <div class="appbox glass">
+                        <img src="images/youtubeicon.jpg" alt="YouTube">
+
+                        <div class="appinfo">
+                            <h3>YouTube</h3>
+                            <p>
+                                YouTube is one of my favorite platforms for
+                                watching videos, tutorials, entertainment,
+                                and learning new things. This has been my
+                                go-to app for everything I need to learn.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="appbox glass">
+                        <img src="images/facebookicon.jpg" alt="Facebook">
+
+                        <div class="appinfo">
+                            <h3>Facebook</h3>
+                            <p>
+                                Facebook is my number one go-to distraction.
+                                It stops me from being productive and makes
+                                me want to doom-scroll, but I try not to make
+                                it a habit. It's also a source of memes and
+                                social media news.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="appbox glass">
+                        <img src="images/tiktokicon.jpg" alt="TikTok">
+
+                        <div class="appinfo">
+                            <h3>TikTok</h3>
+                            <p>
+                                TikTok is where I go for a quick scroll.
+                                I find content that motivates me, since my
+                                FYP is about editing and motivation. I mostly
+                                use the platform for fun and a little
+                                scrolling time.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="appbox glass">
+                        <img src="images/spotifyicon.jpg" alt="Spotify">
+
+                        <div class="appinfo">
+                            <h3>Spotify</h3>
+                            <p>
+                                Spotify is the app I use for coding and
+                                working. NOTE! I use Spicetify, a mod that
+                                changes Spotify's appearance. Great app overall!
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--GOALS SECTION-->
+        <section id="goals" class="goals section">
+
+            <div class="sectionheading">
+                <p class="eyebrow">LOOKING AHEAD</p>
+                <h1 class="headers">MY GOALS</h1>
+                <p class="goalsintro">
+                    A timeline of the things I want to achieve and the person I want to become.
+                </p>
+            </div>
+
+
+            <div class="timeline">
+
+                <div class="timelineitem">
+
+                    <div class="timelinedot"></div>
+
+                    <div class="timelinecontent glass">
+                        <h2>2027</h2>
+                        <h3>LEARNING</h3>
+
+                        <p>
+                            I want to achieve so much this year, starting with
+                            failing at Step 1. Failure is my best teacher on
+                            the path to greatness, and every experience gives
+                            me something to learn from.
+                        </p>
+
+                        <ul>
+                            <li>Master programming languages, from basic to advanced concepts.</li>
+                            <li>Join hackathons with my friends.</li>
+                            <li>Build a successful journey as a video clipper.</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+                <div class="timelineitem">
+
+                    <div class="timelinedot"></div>
+
+                    <div class="timelinecontent glass">
+                        <h2>2028</h2>
+                        <h3>GROWTH</h3>
+
+                        <p>
+                            I want to improve, surpass my limits, and become
+                            a better version of myself. This year, I envision
+                            myself growing beyond what I once thought was possible.
+                        </p>
+
+                        <ul>
+                            <li>Complete multiple programming projects.</li>
+                            <li>Gain more experience and improve my skills.</li>
+                            <li>Take my first steps toward higher levels of the technology industry.</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+                <div class="timelineitem">
+
+                    <div class="timelinedot"></div>
+
+                    <div class="timelinecontent glass">
+                        <h2>2029</h2>
+                        <h3>BUILDING</h3>
+
+                        <p>
+                            I want to turn my ideas into reality by starting
+                            a small business or startup. I also hope to see
+                            the rewards of my hard work as an editor.
+                        </p>
+
+                        <ul>
+                            <li>Start developing my own startup ideas.</li>
+                            <li>Earn from video editing, hopefully reaching my first million.</li>
+                            <li>Embrace new experiences, improvements, and challenges.</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+                <div class="timelineitem">
+
+                    <div class="timelinedot"></div>
+
+                    <div class="timelinecontent glass">
+                        <h2>2030</h2>
+                        <h3>OPPORTUNITIES</h3>
+
+                        <p>
+                            I hope to secure a position on a work platform
+                            before graduation so I can enter the professional
+                            world with confidence. I also want to become a
+                            YouTuber's retainer as a side hustle.
+                        </p>
+
+                        <ul>
+                            <li>Prepare myself for a professional career after graduation.</li>
+                            <li>Welcome and make the most of new opportunities.</li>
+                            <li>Continue growing, regardless of whether everything goes according to plan.</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="timelineending glass">
+                <h2>THE JOURNEY CONTINUES</h2>
+
+                <p>
+                    Above all, I will always be proud of the person I have
+                    become and the journey that brought me here. A new and
+                    improved version of myself, ready to tackle the
+                    professional world.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!--REFLECTION SECTION-->
+        <section id="reflection" class="reflection section">
+
+            <div class="sectionheading">
+                <p class="eyebrow">BEFORE YOU GO</p>
+                <h1 class="headers">REFLECTION</h1>
+                <p class="reflectionintro">A few words before you leave.</p>
+            </div>
+
+            <div class="reflectioncontainer glass">
+
+                <div class="reflectiontext">
+
+                    <h2>Thank You for Visiting!</h2>
+
+                    <p>
+                        Thank you for exploring my webpage! Here's the end
+                        of the short introduction I provided, but there is
+                        still more to come as I continue to improve and grow.
+                    </p>
+
+                    <p>
+                        This project has helped me share my thoughts and
+                        some information about myself. I hope everyone
+                        who has visited has gotten to know me a little better.
+                        Please note that these are just some of the things
+                        I can share about myself.
+                    </p>
+
+                    <p>
+                        Overall, this project was fun, exciting, complex,
+                        and very challenging. However, I learned so much
+                        and will continue improving my HTML and CSS skills
+                        before eventually learning JavaScript.
+                    </p>
+
+                    <p>
+                        Again, thank you for visiting! May the power of
+                        technology and wisdom flow through your systems,
+                        IP address, and social media algorithms. May your
+                        heart and mind prosper!
+                    </p>
+
+                    <h3>Until then, stay curious and Just Do It.</h3>
+
+                </div>
+
+                <div class="reflectionimage">
+                    <img src="images/profile.png" alt="My Personal Picture">
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!--BACK TO HOME BUTTON-->
+    <div class="backhomewrap">
+        <!-- ADD YOUR LINK HERE: replace href="#" with your own link later -->
+        <a href="#" class="backhome glass">BACK TO HOME ↑</a>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <a href="#home" class="footerlogo">
+            <img src="images/logo.png" alt="SebEx Logo">
+        </a>
+
+        <div class="footertext">
+            <p>
+                Developed by: <span>SebEx</span> @2026
+                <span class="footerdivider">|</span>
+                To God Be All the Glory.
+                <span class="footerdivider">|</span>
+                Just Do It.
+            </p>
+            <p class="footernote">Press the logo to go back to home</p>
+        </div>
+
+    </footer>
+
+</body>
+</html>
